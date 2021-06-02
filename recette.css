@@ -19,9 +19,8 @@ p.categorie {
 }
 div.contenu {
 background-color: white;
-margin: 60px 10% 80px 10%;
-padding: 0px 30px 30px 30px;
-min-width: 350px;
+margin: 40px 8px 20px 8px;
+padding: 0px 8px 20x 8px;
 box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
 overflow: visible;
 }
@@ -61,15 +60,16 @@ position: absolute;
 bottom: 0;
 width: 100%;
 color: white;
-background-color: #6C829DC0;height: 80px;
+background-color: #6C829DC0;
+height: 50px;
 }
 table.info td {
 text-align: center;
-font-size: 14px;
+font-size: 12px;
 vertical-align: top;
 }
 table.info th {
-font-size: 16px;
+font-size: 14px;
 vertical-align: bottom;
 padding-bottom: 8px;
 }
@@ -81,7 +81,7 @@ img.info {
   background-color: azure;
 }
 div.collone {
-  width: 45%;
+  width: 100%;
   margin-top: 20px;
 }
 div.collone h2 {
@@ -93,11 +93,6 @@ div.collone h2 {
 }
 div.collone1 {
   display: inline-block;
-  margin-left: 10%;
-
-}
-div.collone2 {
-  float: right;
 }
 div.ingredient p {
   text-align: center;
@@ -132,3 +127,37 @@ table.preparation tr {
   height: 40px;
 }
 
+/* Styles pour odinateur */
+@media only screen and (min-width: 768px) {
+  div.contenu {
+  min-width: 350px;
+  margin: 60px 10% 80px 10%;
+  padding: 0px 30px 30px 30px;
+    }
+  table.info {
+  height: 80px;
+  }
+  table.info td {
+  font-size: 14px;
+  }
+  table.info th {
+  font-size: 16px;
+  }
+  div.collone {
+    width: 45%;
+  }
+  div.collone1 {
+    margin-left: 10%;
+  
+  }
+  div.collone2 {
+    float: right;
+  }
+}
+@media only screen and (min-width: 900px) {
+  div.contenu {
+    margin-left: auto;
+    margin-right: auto;
+    width: 645px;
+    }
+}
